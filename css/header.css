@@ -1,0 +1,205 @@
+header{
+	background: #f1efef;
+	padding: 10px 0;
+  width: 100%;
+}
+
+.left_side{
+	margin-left: 8%;
+}
+
+.right_side{
+	margin-right: 8%;
+}
+
+.header-container{	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-logo{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	color: black;
+	cursor: pointer;
+}
+
+.header-logo a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* Start Header Animaion styles*/
+.header_animation {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+
+@-webkit-keyframes go_down {
+    from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+  }
+  @keyframes go_down {
+    from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+  }
+  
+  .go_down {
+    -webkit-animation-name: go_down;
+    animation-name: go_down;
+  }
+  
+  /* End Header Animation styles*/
+
+  /* Bell*/
+  .notification_bell img{
+	
+	width:40px;
+	height:40px;
+	cursor:pointer;
+	opacity: 60%;
+  }
+
+  
+  .notification_bell img:hover{
+  opacity: 100%;
+  
+  }
+  /*---------------------*/
+
+
+  /* Start Menu styles*/
+  .avatar img{
+	width:50px;
+	height:50px;
+	cursor:pointer;
+	opacity: 70%;
+  }
+
+  .avatar img:hover{
+	opacity: 100%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 45%;
+  }
+
+
+  header a{
+  text-decoration: none;
+  color: black;
+  }
+
+  header ul{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+
+  header li{
+	display: flex;
+  margin-left: 25px;
+  flex-direction: row;
+	align-items: center;
+  }
+
+  
+  .right_side ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+  }
+  
+  .right_side ul li:active > ul {
+	display:inherit;
+}
+
+.right_side ul ul ul {
+	position: absolute;
+	top:0;
+	left:100%;
+}
+  
+#btnControl {
+  display: none;
+}
+
+.menu_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  
+}
+
+.menu_box li{
+  margin: 10px;
+  padding: 20px;
+  height: 30px;
+  
+}
+
+.menu_item:hover{
+  background-color: #f1efef;
+
+  transition: 1.5s
+}
+
+#btnControl:checked + label > .menu_box ul{
+
+  top: 60px;
+  right: 8%;
+
+  position: absolute;
+  box-sizing: border-box;
+
+  display:block;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid rgb(221, 221, 221);
+  font-family: 'Cabin', sans-serif;
+  box-shadow:  0px 8px 10px rgba(68, 68, 68, 0.6);
+  border-radius: 2px;
+  text-align: center;
+
+}
+
+ .user_name{
+   font-size: 22px;
+   color: #5f5f5f;
+   font-weight: bold;
+ }
+
+ hr{
+  align-content: center;
+  color: #f1efef;
+ }
+
+  /* End Menu styles*/
