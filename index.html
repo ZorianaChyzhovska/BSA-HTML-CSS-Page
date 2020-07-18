@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta data -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>BSA | Task Page | Zoriana Chyzhovska</title>
+
+        <!-- CSS files -->
+        <link type="text/css" rel="stylesheet" href="./css/style.css">
+        <link type="text/css" rel="stylesheet" href="./css/header.css">
+        <link type="text/css" rel="stylesheet" href="./css/not_found.css">
+        <link type="text/css" rel="stylesheet" href="./css/notifications.css">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+
+        <!-- Icons -->
+        <link href="./images/favicon.ico" rel="icon" type="image/x-icon">
+    </head>
+
+    <body>
+        <!-- Start header -->
+        <header class="header_animation go_down">
+            <div class="header-container">
+                <div class="left_side">
+                    <div class="header-logo">
+                        <a href="#">LOGO</a>   
+                    </div>
+                </div>
+                <div class="right_side">
+                    <ul>
+                        <li class="notification_bell">
+                            <img src="./images/bell_icon.png" alt="Bell icon" title="">
+                        </li>
+                        <li class="avatar ">
+                            <input type="checkbox" id="btnControl"/>
+                            <label class="btn" for="btnControl">
+                                <img alt="Zoriana Chyzhovska avatar" src="./images/Z.png" >
+                                <div class="menu_box">
+                                   <ul>
+                                        <li class="user_name">Zoriana Chyzhovska</li>
+                                        <hr >
+                                        <a href="#"><li class="menu_item">Profile</li></a>
+                                        <a href="#"><li class="menu_item">Settings</li></a>
+                                        <a href="#"><li class="menu_item">Help</li></a>
+                                        <a href="#"><li class="menu_item">Log Out</li></a>
+                                    </ul>
+                                </div>
+                            </label>
+                                
+                        </li>
+                    </ul>
+                </div>
+            </div>	
+        </header>
+       <!-- End header -->
+
+       <!-- Start content -->
+       <div class="content">
+           <!-- Start 404 content -->
+            <div id="notfound">
+                <div class="notfound">
+                    <div class="notfound-404">
+                        <h3>Oops! Page not found</h3>
+                        <h1><span>4</span><span>0</span><span>4</span></h1>
+                    </div>
+                    <h2>we are sorry, but the page you requested was not found</h2>
+                </div>
+            </div>
+            <!---->     
+       </div>
+       <!-- End condent -->
+
+       <!-- Start notifications -->
+            <div class="notifications_container">
+                <div class="notification success">
+                    <img class="notification_icon" src="./images/ok.png" alt="ok icon">
+                        
+                    <div class="notification_right">
+                        <strong class="notification_header"> Success</strong>
+                        <span class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">&times;</span><br> Successfully completed
+                    </div>    
+                </div>
+
+                <div class="notification error">
+                    <img class="notification_icon" src="./images/error.png" alt="error icon">
+                
+                    <div class="notification_right">
+                        <strong class="notification_header">Error</strong>
+                        <span class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">&times;</span><br> Something went wrong
+                    </div>
+                </div>
+
+                <div class="notification warning">
+                    <img class="notification_icon" src="./images/warning.png" alt="warning icon">
+                    <div class="notification_right">
+                        <strong class="notification_header">Warning</strong>
+                        <span class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">&times;</span><br> User has to be admin
+                    </div>
+                </div>
+            </div>  
+         <!---->    
+
+    </body>
+</html>
